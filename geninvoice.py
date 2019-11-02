@@ -30,5 +30,7 @@ for i in range(iteraction):
     pi.text = str(newpi)
     #pi.set('updated', 'yes')
     newfile = fn.replace('IT01234567890_FPA01.xml', 'IT01234567890_' + str(newpi) + '.xml')
-    invoice.write('./fakexml/'+ newfile)
+    invoice.write('./fakexml/'+ newfile, encoding="utf-8", xml_declaration=True)
+
+    
     
