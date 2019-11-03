@@ -6,12 +6,13 @@ import sys
 
 iteraction = int(sys.argv[1])
 
+fn ='IT01234567890_FPA01.xml'
 
 # apre il file scaricato dal sito fatturapa.gov.it come modello
 invoice = ET.parse('IT01234567890_FPA01.xml')
-fn ='IT01234567890_FPA01.xml'
 
 #crea un oggetto per il tag ProgressivoInvio
+
 #pivatr = invoice.find('FatturaElettronicaHeader/DatiTrasmissione/IdTrasmittente/IdCodice').text
 pi = invoice.find('FatturaElettronicaHeader/DatiTrasmissione/ProgressivoInvio')
 #print(pivatr)
